@@ -7,7 +7,7 @@ In the "getting and cleaning data" repository you will find 4 files:
 - README.md: scripts
 - run_analysis.R: scripts with all the code necessary to produce the tidy data set
 
-This 'README.md' file provides the reader with information about the repository and its files. Make sure to read the CodeBook.md prior o using the 'run_analysis.R' file.
+This 'README.md' file provides the reader with information about the repository and its files. Make sure to read the CodeBook.md prior to using the 'run_analysis.R' file.
 
 #Information about the raw data acquisition
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. 
@@ -25,7 +25,6 @@ was obtained by calculating variables from the time and frequency domain.
 Information about the CodeBook.md
 The CodeBook describes the variables, the data, and any transformations or work that was performed to clean up the data. It also contains an explaination to the purpose of each code
 
-
 Information about run_analysis.R
 The run analysis file was created to perform the follwing steps:
 
@@ -34,6 +33,7 @@ The run analysis file was created to perform the follwing steps:
 3. Uses descriptive activity names to name the activities in the data set
 4. Appropriately labels the data set with descriptive variable names.
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+Prior to using the 'run_analysis.R' file make sure to properly set up the working directory. Once the working directory is properly set-up, the code can be copied into R and ran.
 
 Information about tidy data set 'Cleaned_data.txt'
 The 'Cleaned_data.txt' file contains the the output of the 'run_analysis.R' on the data obtained from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
