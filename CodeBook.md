@@ -1,6 +1,6 @@
 ---
 title: "CodeBook"
-author: "Dr. Sathoud"
+author: "Ornella Sathoud"
 date: "5/9/2020"
 output:
   word_document: default
