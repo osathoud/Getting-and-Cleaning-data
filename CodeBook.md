@@ -55,9 +55,8 @@ The following files are available for the train and test data. Their description
 -The units used for the accelerations (total and body) are 'g's (gravity of earth -> 9.80665 m/seg2).
 -The gyroscope units are radian per second (rad/seg).
 
-First check and create directory, then set working directory
+First set your working directory
 ```{r}
-if (!file.exists("getting_and_cleaning_data")){dir.create("getting_and_cleaning_data")}
 setwd('C:/Users/Osath/OneDrive/Documents/getting_and_cleaning_data_project/UCI HAR Dataset');
 ```
 
