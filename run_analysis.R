@@ -7,7 +7,6 @@
 #4.The README that explains the analysis files is clear and understandable.
 #5.The work submitted for this project is the work of the student who submitted it.
 
-#CODE BOOK
 #1 set your directory to the appropriate location
 setwd('C:/Users/Osath/OneDrive/Documents/getting_and_cleaning_data_project/UCI HAR Dataset');
 
