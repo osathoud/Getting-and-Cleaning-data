@@ -50,3 +50,24 @@ Notes:
 -Each feature vector is a row on the 'X' and 'y' files.
 -The units used for the accelerations (total and body) are 'g's (gravity of earth -> 9.80665 m/seg2).
 -The gyroscope units are radian per second (rad/seg).
+
+Once loaded into R, the data were transformed in the following order with the run_analysis.md R script:
+- Merges the training and the test sets to create one data set.
+Using cbind commands, y_train.txt, subject_train.txt and x_train.txt were bound together to form "dataset_train"
+Using cbind commands, y_test.txt, subject_test.txt, and x_test.txt were bound together to form "dataset_test"
+Both "dataset_train" and "dataset_test" were bound to form "Master_set" using rbind
+
+- Extracts only the measurements on the mean and standard deviation for each measurement.
+The information were extracted using the "grepl" function, after creating a vector "Master_set2_vector": that held all the necessary information into a the matrix "Master_set2"
+
+- Uses descriptive activity names to name the activities in the data set
+A new matrix called "Master_set3" was created to hold "Master_set2" properly labeld
+
+- Appropriately labels the data set with descriptive variable names.
+Using the 'gsub' function, the acronyms were converted to their full spelling for proper labelling of the variables
+
+- From the data set in step 4, creates a second, independent tidy data set with the average of each variable for 
+each activity and each subject.
+The 'aggregate' function helped with calculating the average of each variable into "Master_set4" matrix, and then the order function helped with oraginzing the data into matrix "Cleandata"
+
+- The final data set called "cleaned_data.txt" was created from the matrix "Cleandata"
